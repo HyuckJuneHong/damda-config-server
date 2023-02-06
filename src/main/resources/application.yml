@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: damda-config
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:HyuckJuneHong/git-local-config.git
+          ignoreLocalSshSettings: true
+          private-key: |
+            -----BEGIN EC PRIVATE KEY-----
+            Proc-Type: 4,ENCRYPTED
+            DEK-Info: AES-128-CBC,0B7DC387C7EB7479C3FA4EFC45E76A8A
+            caFFn7BXM7QO3aUMfNmsz4cx3UBl2bktRmdh1cvBnVPBg/YBLCdQNvEHdJKHgXll
+            CtsuDN4zSRfPgdoIYKj5Qa5rrUvybXC+/Pfu5mVIEdODmYFYioizk1Apnpr+DQKb
+            gvabnhMDTe7hCQK1ifXRfKaSlJKKs9AFsrO9wNyk/qQ=
+            -----END EC PRIVATE KEY-----
