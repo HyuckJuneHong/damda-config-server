@@ -21,6 +21,12 @@ dependencies {
 
     //config server
     implementation 'org.springframework.cloud:spring-cloud-config-server'
+
+    //acutator
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
+
+    //amqp
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-bus-amqp'
 }
 
 dependencyManagement {
